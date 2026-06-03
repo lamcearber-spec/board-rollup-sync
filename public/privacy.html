@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy | Board Rollup Sync</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #172033;
+        --muted: #5f6f8a;
+        --line: #d9e0ec;
+        --paper: #ffffff;
+        --wash: #f5f7fb;
+        --blue: #186ade;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--wash);
+        color: var(--ink);
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 40px auto;
+        padding: 32px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        margin-top: 28px;
+        font-size: 20px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--blue);
+      }
+
+      .updated {
+        margin: 0 0 24px;
+        color: #43516a;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: June 3, 2026</p>
+
+      <p>
+        Board Rollup Sync is a monday.com board view operated by Radom UG. The app helps teams copy selected source
+        board items into one configured rollup board for reporting and dashboard workflows.
+      </p>
+
+      <h2>Data We Access</h2>
+      <p>
+        When installed, the app can read monday.com board IDs, board names, group IDs, item IDs, item names, column
+        titles, column types, and column values needed to build a rollup preview and prepare sync operations.
+      </p>
+
+      <h2>How Data Is Used</h2>
+      <p>
+        Board data is used only to display the preview, calculate create/update/skip operations, and perform a manual
+        sync when a user clicks Run manual sync. The app writes only to the configured target rollup board.
+      </p>
+
+      <h2>Storage</h2>
+      <p>
+        The app stores user configuration and source-to-rollup item mappings in monday.com instance storage. Board item
+        data is not stored in an external database by Board Rollup Sync.
+      </p>
+
+      <h2>Third Parties</h2>
+      <p>
+        The app is hosted on Vercel and uses monday.com's API and SDK to operate inside monday.com. The app does not use
+        advertising trackers and does not sell personal data.
+      </p>
+
+      <h2>Retention</h2>
+      <p>
+        Configuration and sync mappings remain available while the app is installed and monday.com instance storage keeps
+        the data. Users can edit configuration or remove the app view from monday.com.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        Board Rollup Sync requests only the monday.com OAuth scopes required for the board view. At launch, the app
+        requests board read access and board write access so it can create and update rollup items on the user's behalf.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions, support, or deletion requests, contact
+        <a href="mailto:support@konverter-pro.de">support@konverter-pro.de</a>.
+      </p>
+    </main>
+  </body>
+</html>

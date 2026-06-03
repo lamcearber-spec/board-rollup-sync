@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How To Use | Board Rollup Sync</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #172033;
+        --muted: #5f6f8a;
+        --line: #d9e0ec;
+        --paper: #ffffff;
+        --wash: #f5f7fb;
+        --blue: #186ade;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--wash);
+        color: var(--ink);
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 40px auto;
+        padding: 32px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        margin-top: 28px;
+        font-size: 20px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--blue);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>How To Use Board Rollup Sync</h1>
+      <p>
+        Board Rollup Sync is a monday.com board view. It manually copies selected items from multiple source boards into
+        one target rollup board for dashboard reporting.
+      </p>
+
+      <h2>Install</h2>
+      <ol>
+        <li>Install the app from the monday.com app marketplace or install link.</li>
+        <li>Open the target rollup board in monday.com.</li>
+        <li>Add a new board view and choose Board Rollup Sync.</li>
+      </ol>
+
+      <h2>Configure</h2>
+      <ol>
+        <li>Enter source board IDs separated by commas.</li>
+        <li>Enter the target rollup board ID and target group ID.</li>
+        <li>Enter target column IDs for source board, source item link, and sync hash tracking.</li>
+        <li>Map source column titles to target column IDs, one mapping per line.</li>
+      </ol>
+
+      <h2>Preview And Sync</h2>
+      <ol>
+        <li>Click Preview sync to see planned creates, updates, and skips.</li>
+        <li>Review the plan before writing to the target board.</li>
+        <li>Click Run manual sync to create or update rollup items.</li>
+      </ol>
+
+      <h2>Permissions</h2>
+      <p>
+        The app requests board read access to inspect source boards and board write access to create or update items on
+        the configured target rollup board. It does not edit the configured source boards.
+      </p>
+    </main>
+  </body>
+</html>
