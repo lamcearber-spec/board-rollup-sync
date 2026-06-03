@@ -1,0 +1,50 @@
+:root {
+  --app-bg: #f5f7fb;
+  --panel-bg: #ffffff;
+  --strong-text: #172033;
+  --body-text: #344054;
+  --muted-text: #667085;
+  --border: #e4e7ec;
+  --border-strong: #cfd5df;
+  --accent-blue: #1f76c2;
+  --green-soft: #e7f7ef;
+  --green-strong: #157347;
+  --red-soft: #fff2f3;
+  --red-strong: #8f2636;
+  --shadow-soft: 0 14px 32px rgba(16, 24, 40, 0.08);
+  color: var(--body-text);
+  background: var(--app-bg);
+  font-family: Aptos, "Segoe UI", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  letter-spacing: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+#root {
+  min-height: 100vh;
+}
